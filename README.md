@@ -1,5 +1,5 @@
 # node-transform-matrix [![Build Status](https://travis-ci.org/chrisaljoudi/Queue.svg?branch=master)](https://travis-ci.org/chrisaljoudi/node-transform-matrix)
-A lightweight, fast transformation Matrix module for node.js and the browser.
+A lightweight, fast transformation matrix module for node.js and the browser.
 
 ## What?
 
@@ -28,7 +28,7 @@ Then you can use the following to interact with the module:
 * `m.inverse()` returns a Matrix that is the inverse of `m`.
 * `m.multiply(n)` returns a Matrix that is the product of `m` and `n`.
 * `m.reset()` resets Matrix `m` to the default, transformation-free state.
-* `m.transformPoint(x, y)` transforms the point (`x`, `y`) through `m` and returns a two-element array (`[new_x, new_y]`) that represents the resulting point.
+* `m.transformPoint(x, y)` transforms the point (`x`, `y`) through `m` and returns a two-element array `[new_x, new_y]` that represents the resulting point.
 
 ## Contribution
 
