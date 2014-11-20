@@ -19,5 +19,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "homepage": "https://github.com/chrisaljoudi/node-transform-matrix"
+  "homepage": "https://github.com/chrisaljoudi/node-transform-matrix",
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
 }
