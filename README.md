@@ -38,6 +38,10 @@ resets Matrix `m` to the default, transformation-free state.
 ### `m.transformPoint(x, y)`
 transforms the point (x, y) through `m` and returns a two-element array `[new_x, new_y]` that represents the resulting point.
 
+## Who made this?
+
+WatchStop was written with care and love by [Chris](https://chrismatic.io/).
+
 ## Contribution
 
 * All contributions are welcome — thanks for helping make `node-transform-matrix` better.
