@@ -40,7 +40,7 @@ transforms the point (x, y) through `m` and returns a two-element array `[new_x,
 
 ## Who made this?
 
-WatchStop was written with care and love by [Chris](https://chrismatic.io/).
+This module was written with care and love by [Chris](https://chrismatic.io/).
 
 ## Contribution
 
