@@ -44,4 +44,4 @@ transforms the point (x, y) through `m` and returns a two-element array `[new_x,
 
 ## License
 
-[New BSD](LICENSE).
+`node-transform-matrix` is released under the MIT License. [See LICENSE](LICENSE).
