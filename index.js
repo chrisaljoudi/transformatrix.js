@@ -68,4 +68,11 @@ Matrix.prototype.transformPoint = function(px, py) {
 	py = x * this.m[1] + y * this.m[3] + this.m[5];
 	return [px, py];
 };
+Matrix.prototype.transformVector = function(px, py) {
+	var x = 0;
+	var y = 0;
+	x = px * this.m[0] + py * this.m[2];
+	y = px * this.m[1] + py * this.m[3];
+	return [x,y];
+};
 module.exports = Matrix;

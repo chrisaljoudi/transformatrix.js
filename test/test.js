@@ -20,4 +20,12 @@ describe("Matrix", function() {
 			assert.deepEqual(m.transformPoint(point[0], point[1]), [point[0] * 2, point[1] * 2]);
 		});
 	});
+	describe("Create a 'blank' Matrix, scale, and transform vector", function() {
+		var m = new Matrix();
+		var point = [50, 50];
+		m.scale(3, 2);
+		it("should scale the point by 2x", function() {
+			assert.deepEqual(m.transformVector(point[0], point[1]), [point[0] * 3, point[1] * 2]);
+		});
+	});
 });
