@@ -3,7 +3,7 @@ A lightweight, fast transformation matrix module for node.js and the browser.
 
 ## What?
 
-This module enables you to track the transformation matrix of a 2D plane by applying the transformation just as you would on an HTML5 `<canvas>`.
+This module enables you to track the transformation matrix of a 2D plane by applying the transformation just as you would on an HTML5 `<canvas>` context.
 
 ## Installation
 
