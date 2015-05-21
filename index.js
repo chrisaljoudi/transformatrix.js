@@ -3,6 +3,7 @@ function Matrix() {
 }
 Matrix.prototype.reset = function() {
 	this.m = [1, 0, 0, 1, 0, 0];
+  return this;
 };
 Matrix.prototype.multiply = function(matrix) {
 	var m11 = this.m[0] * matrix.m[0] + this.m[2] * matrix.m[1],
@@ -19,6 +20,7 @@ Matrix.prototype.multiply = function(matrix) {
 	this.m[3] = m22;
 	this.m[4] = dx;
 	this.m[5] = dy;
+  return this;
 };
 Matrix.prototype.inverse = function() {
 	var inv = new Matrix();
@@ -49,16 +51,19 @@ Matrix.prototype.rotate = function(rad) {
 	this.m[1] = m12;
 	this.m[2] = m21;
 	this.m[3] = m22;
+  return this;
 };
 Matrix.prototype.translate = function(x, y) {
 	this.m[4] += this.m[0] * x + this.m[2] * y;
 	this.m[5] += this.m[1] * x + this.m[3] * y;
+  return this;
 };
 Matrix.prototype.scale = function(sx, sy) {
 	this.m[0] *= sx;
 	this.m[1] *= sx;
 	this.m[2] *= sy;
 	this.m[3] *= sy;
+  return this;
 };
 Matrix.prototype.transformPoint = function(px, py) {
 	var x = px, y = py;
