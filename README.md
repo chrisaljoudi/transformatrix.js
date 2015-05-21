@@ -21,22 +21,18 @@ var Matrix = require("node-transform-matrix");
 
 The module provides the following:
 
-### `new Matrix()`
-creates and returns a new Matrix initialized to a default, untouched transformation.
-### `m.translate(x, y)`
-applies a translation to Matrix `m`.
-### `m.scale(scaleX, scaleY)`
-scales Matrix `m` by `scaleX`, `scaleY`.
-### `m.rotate(radians)`
-rotates Matrix `m` by the specified number of `radians`.
-### `m.inverse()`
-returns a Matrix that is the inverse of `m`.
-### `m.multiply(n)`
-returns a Matrix that is the product of `m` and `n`.
-### `m.reset()`
-resets Matrix `m` to the default, transformation-free state.
-### `m.transformPoint(x, y)`
-transforms the point (x, y) through `m` and returns a two-element array `[new_x, new_y]` that represents the resulting point.
+Syntax             | Description
+-------------------|-----------------------------------------------------------------------
+**`new Matrix()`** | creates and returns a new, untouched transformation Matrix
+**`m.translate(x, y)`** | applies a translation to Matrix `m`
+**`m.scale(scaleX, scaleY)`** | scales Matrix `m` by `scaleX`, `scaleY`
+**`m.rotate(radians)`** | rotates Matrix `m` by the specified number of `radians`
+**`m.inverse()`** | returns a Matrix that is the inverse of `m`
+**`m.multiply(n)`** | returns a Matrix that is the product of `m` and `n`
+**`m.reset()`** | resets Matrix `m` to the default, transformation-free state
+**`m.transformPoint(x, y)`** | transforms the point `(x, y)` through `m`, returns `[new_x, new_y]`
+
+**Tip:** where appropriate, the functions above return a `Matrix` instance, which means you can chain them: `m.inverse().multiply(2)`.
 
 ## Who made this?
 
