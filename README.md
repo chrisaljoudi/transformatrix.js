@@ -8,7 +8,7 @@ A lightweight, fast transformation matrix implementantion in JavaScript.
 ## Installation
 
 ```javascript
-npm install node-transform-matrix
+npm install transformatrix
 ```
 
 It's recommended you use [browserify](http://browserify.org) if you're targeting browsers, but you can also simply drop in the main `.js` file which will export `Matrix` globally.

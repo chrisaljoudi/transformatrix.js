@@ -1,11 +1,11 @@
 {
-  "name": "node-transform-matrix",
+  "name": "transformatrix",
   "version": "1.0.2",
   "description": "A matrix module that tracks 2D transformations with the same API as the HTML5 <canvas>",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrisaljoudi/node-transform-matrix.git"
+    "url": "https://github.com/chrisaljoudi/transformatrix.js.git"
   },
   "keywords": [
     "matrix",
@@ -14,12 +14,12 @@
   "author": "Chris Aljoudi",
   "license": "New BSD",
   "bugs": {
-    "url": "https://github.com/chrisaljoudi/node-transform-matrix/issues"
+    "url": "https://github.com/chrisaljoudi/transformatrix.js/issues"
   },
   "scripts": {
     "test": "mocha"
   },
-  "homepage": "https://github.com/chrisaljoudi/node-transform-matrix",
+  "homepage": "https://github.com/chrisaljoudi/transformatrix.js",
   "devDependencies": {
     "mocha": "^2.0.1"
   }
