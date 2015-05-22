@@ -80,5 +80,12 @@
         py = x * this.m[1] + y * this.m[3];
         return [px, py];
     };
-    global.Matrix = (global.module || {}).exports = Matrix;
+    if(typeof global.module !== "undefined") {
+        // we're in a node.js-like module environment 
+        global.module.exports = Matrix;
+    }
+    else {
+        // we're in a browser (probably)
+        global.Matrix = Matrix;
+    }
 })(this);
